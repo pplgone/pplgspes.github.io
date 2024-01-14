@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Tourney:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Tourney:wght@800&family=Vazirmatn:wght@800&display=swap');
+
+
+ @keyframes kartu{
+	0% {
+			  transform: scale(0);
+	  opacity: 1;
+	}
+	100% {
+			  transform: scale(1);
+	  opacity: 1;
+	}
+  }
+
+  @keyframes text-focus-in {
+	0% {
+			  filter: blur(5px);
+	  opacity: 0;
+	}
+	100% {
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes focus-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100vw;
+	background-color: #555151;
+}
+
+/* START BERANDA*/
+
+/*start home*/
+/*star nav*/
+.home {
+	width: 100vw;
+	height: 80vh;
+	background-color: #313030;
+}
+
+.navbar{
+	width: 100vw;
+	height: 13vh;
+	position: fixed;
+	top: -12px;
+	z-index: 100;
+	background-color: transparent;
+}
+
+.navbar .navbar-toggler{
+	margin-top: -20px;
+}
+
+.navbar .collapse{
+	height: 73px;
+	transition: 0.1s all;
+	background-color: transparent;
+	backdrop-filter: blur(10px);
+}
+
+.navbar-nav{
+	margin-left: 30vw;
+	display: flex;
+	gap: 20px;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: black;
+}
+
+/*end nav*/
+
+/*start judul*/
+.judul{
+	padding-top: 20vh;
+	color: white;
+	text-align: center;
+	width: 100vw;
+	height: 30vw;
+}
+
+.judul h2{
+	justify-content: center;
+	display: flex;
+	font-size: 30px;
+	gap: 10px;
+}
+
+.judul h2 p:first-child{
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.judul h2 p:nth-child(2){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.1s;
+}
+
+.judul h2 p:nth-child(3){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.2s;
+}
+
+.judul h2 p:nth-child(4){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.3s;
+}
+
+.judul h2 p:nth-child(5){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.4s;
+}
+
+.judul h2 p:nth-child(6){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.5s;
+}
+
+.judul h2 p:nth-child(7){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.6s;
+}
+
+.judul h2 p:nth-child(10){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.7s;
+}
+
+.judul h2 p:nth-child(11){
+	animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation-delay: 0.8s;
+}
+
+.judul h1{
+	margin-top: -2vw;
+	font-size: 80px;
+	background: #FFFFFF;
+	background: linear-gradient(to bottom, #FFFFFF 24%, #616161 67%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+.judul p{
+	word-spacing: 40px;
+}
+
+.judul:last-child{
+	font-size: 20px;
+}
+/*end judul*/
+/*end home*/
+
+/*start content*/
+.content{
+	margin-top: -150px;
+}
+
+.container-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 70px;
+}
+
+
+.container-content .card{
+	width: 12rem;
+	height: 22rem;
+	border-radius: 20px;
+	animation: kartu 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	background-color: #D9D9D9;
+}
+
+.container-content .card button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	color: whitesmoke;
+	font-family: 'Poppins', sans-serif;
+	background-color: #13A021;
+}
+
+.container-content .card img{
+	border-radius: 20px;
+	box-shadow: 2px 7px 5px -2px rgba(0,0,0,0.68);
+}
+/*end content*/
+
+#putih{
+	position: relative;
+	top: 280px;
+}
+
+
+/*start contact*/
+.contact{
+	position: absolute;
+	background-color: white;
+	width: 100vw;
+	height: 270px;
+}
+
+.box-text{
+	width: 100vw;
+	height: 50vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+.box-text img{
+	border-radius: 50%;
+	box-shadow: 3px 5px 5px 1px rgba(0,0,0,0.52);
+}
+
+.box-text p:nth-child(3){
+	margin-top: 10px;
+}
+/*end contact*/
+
+/* END BERANDA*/
+
+
+
+/* START ALBUM */
+
+.carousel{
+	margin-top: -30vw;
+}
+
+.carousel .carousel-item{
+	transition: 0.8s ease-in-out;
+}
+
+.carousel .carousel-inner{
+	padding-left: 33vw;
+	padding-right: 33vw;
+	padding-top: 10vw;
+	padding-bottom: 8vw;
+	background-color: transparent;
+}
+
+.carousel-item h5{
+	text-transform: uppercase;
+	color: white;
+	font-size: 35px;
+	font-family: 'Poppins', sans-serif;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+.carousel-item img{
+	width: 35vw;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+/* END ALBUM */
+
+/* START CREATOR */
+ .container-contact{
+	width: 90vw;
+	min-height: 70vh;
+    border: 2px solid white;	
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #555151;
+	border-radius: 50px;
+	padding: 20px;
+	box-shadow: -3px -5px 26px 2px rgba(255,255,255,1) inset;
+ }
+
+ .box-contact1{
+	display: flex;
+	justify-content: space-evenly;
+ }
+
+ .box-contact2{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+ }
+
+.card-contact{
+	max-width: 30vw;
+	max-height: 50vh;
+	background-color: #0075FF;
+	border-radius: 15px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.67) inset;
+}
+
+.card-contact img{
+	margin-right: 20px;
+	max-height: 15vw;
+	max-height: 23vh;
+	max-width: 15vw;
+	border-radius: 10px;
+}
+
+.card-contact h2{
+	margin-top: 40px;
+	font-family: 'Tourney', sans-serif;
+	font-size: 30px;
+	color: white;
+}
+
+/* start kontak card */
+
+ .container-contact2{
+	margin-top: 100px;
+	justify-content: center;
+	gap: 70px;	
+	flex-wrap: wrap;
+ }
+
+ .kartu-kontak{
+	text-align: center;
+	width: 250px;
+	min-height: 75vh;
+	background-color: #FFA34E;
+	color: white;
+	border-radius: 30px;
+ }
+
+ .kartu-kontak p{
+	font-size: 10px;
+	margin-top: -10px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+ }
+
+ .kartu-kontak p:nth-child(2){
+	color: #FF0000;
+ }
+
+ .kartu-kontak h2{
+	margin-top: 10px;
+	letter-spacing: 5px;
+	font-family: 'Vazirmatn', sans-serif;
+ }
+
+ .kartu-kontak h3{
+	margin-top: 30px;
+	font-family: 'Vazirmatn', sans-serif;
+ }
+
+
+
+/* end kontak card */
+/* END CREATOR */
+
+	/* START JADWAL */
+ .container-jadwal{
+	background-color: 	#555151;
+	text-align: center;
+ }
+
+ .judul-content{
+	width: 100%;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 2px;
+ }
+	/* start kartu jadwal */
+.box-jadwal{
+	justify-content: space-around;
+	gap: 75px;
+	flex-wrap: wrap;
+}
+
+.kartu-jadwal{
+	text-align: center;
+	width: 300px;
+	min-height: 60vh;
+	background-color: #FFF7AB;
+	border-radius: 30px;
+}
+
+.kartu-jadwal h2{
+	color: #473E3E;
+	font-family: 'Poppins', sans-serif;
+}
+
+.kartu-jadwal p{
+	font-size: 30px;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+	/* end kartu jadwal */
+
+	/* start button jadwal */
+.box-button1{
+	margin-top: 100px;
+}
+
+.box-button1 button{
+	width: 150px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.box-button2{
+	margin-top: 20px;
+}
+
+.box-button2 button{
+	width: 150px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+	/* end button jadwal */
+	/* END JADWAL */
+
+@media screen and (max-width:767px) {
+	body{
+		overflow-y: scroll;
+	}
+
+/* page 1 */
+
+.navbar .collapse{
+	height: 100vh;
+	visibility: visible;
+	padding-top: 100px;
+	font-size: 5vw;
+}
+
+.carousel .carousel-inner{
+	padding-left: 20vw;
+	padding-right: 20vw;
+	padding-top: 30vw;
+	padding-bottom: 8vw;
+}
+
+.carousel-item img{
+	width: 60vw;
+}
+
+.judul h1{
+	font-size: 50px;
+}
+
+.judul h2{
+	font-size: 20px;
+}
+
+/* footer start */
+ .contact{
+	width: 100vw;
+	min-height: 40vh;
+	max-height: 50vh;
+ }
+
+ .box-text{
+	height: 39vh;
+	font-size: 0.8rem;
+ }
+
+/* footer end */
+/* page 1 end */
+
+
+	
+	
+}
